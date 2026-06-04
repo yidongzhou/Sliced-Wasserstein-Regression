@@ -136,7 +136,7 @@ fit_saw <- sawr(
   y = y,
   x = x,
   xOut = xOut,
-  optns = list(method = "global", L = 200, cores = 1, verbose = FALSE)
+  optns = list(method = "global", cores = 6, eps = 1e-6, max_iter = 500)
 )
 
 length(fit_saw$predicted_samples)
